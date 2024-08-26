@@ -13,10 +13,10 @@
   
   ---------------------------------------------------------------------- */
   :root {
-      --color-lightest: #ffcdcd;
-      --color-light: #ee6c6c;
-      --color: #EC6565;
-      --color-dark: #ca4e4e;
+      --color-lightest: #0071ff;;
+      --color-light: #6fddfe;
+      --color: #0071ff;;
+      --color-dark: #0071ff;;
       --font: "Open Sans", Helvetica, sans-serif;
   }
 
@@ -33,7 +33,7 @@
 
   body {
       background: var(--color-light);
-      background: linear-gradient(to top right, var(--color-light) 0%, var(--color-dark) 100%);
+      background: black;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -41,13 +41,14 @@
       margin: 0;
   }
 
+
   .frame {
       position: relative;
       width: 400px;
       height: 400px;
-      border-radius: 2px;
+      border-radius: 15px;
       box-shadow: 1px 2px 10px 0px rgba(0, 0, 0, 0.3);
-      background: #fff;
+      background: #f6f6f6 -webkit-linear-gradient(top, #f6f6f6 0%, #fdfdfd 100%);
       font-family: var(--font);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -112,7 +113,7 @@
       font-size: 25px;
       font-weight: 400;
       margin-top: 20px;
-      color: var(--color-dark);
+      color: black;
       text-align: center;
   }
 
@@ -187,7 +188,7 @@
       top: 0;
       right: 65%;
       height: 45px;
-      text-shadow: 1px 1px 2px var(--color);
+      /* text-shadow: 1px 1px 2px var(--color); */
   }
 
   .carousel .change_outer {
@@ -208,7 +209,8 @@
   .carousel .change_outer .element {
       display: block;
       font-weight: 700;
-      text-shadow: 1px 1px 2px var(--color);
+      color: #0071ff;
+      /* text-shadow: 1px 1px 2px var(--color); */
   }
 
   @-webkit-keyframes rotate {
@@ -374,7 +376,7 @@
       box-sizing: border-box;
       width: 120px;
       height: 100px;
-      background: var(--color-lightest);
+      background: #f6f6f6 -webkit-linear-gradient(top, #f6f6f6 0%, #fdfdfd 100%);
       text-align: center;
       padding-top: 28px;
       transition: all 0.4s ease-in-out;
